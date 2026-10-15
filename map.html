@@ -1,49 +1,321 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Bray Estate — rustic elegance for Texas events and stays.">
-<title>Explore the Grounds | Bray Estate</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
-<script src="assets/main.js" defer></script>
-</head>
-<body>
-<header class="site-header">
-<a class="brand" href="index.html"><span class="brand-mark">BE</span><span class="brand-name">BRAY ESTATE<small>TEXAS · EVENTS · STAYS</small></span></a>
-<button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-<nav class="nav"><a class="" href="index.html">Home</a><a class="" href="events.html">Events</a><a class="" href="stay.html">Stay With Us</a><a class="" href="booking.html">Book</a><a class="active" href="map.html">Explore the Grounds</a><a class="" href="contact.html">Contact</a></nav>
-</header>
-<main>
-<section class="page-hero compact-hero"><p class="eyebrow">TAKE A LOOK AROUND</p><h1>Explore the <em>estate.</em></h1><p>View the concept property layout and the interactive map area for Bray Estate in Texas.</p></section>
-<section class="section-wrap"><div class="map-disclaimer"><strong>Concept site plan:</strong> The property diagram below is illustrative, not a surveyed map. The interactive map is centered on Texas as a placeholder because a city or street address has not yet been provided. Replace both with accurate property details before guests rely on them.</div>
-<div class="map-section-heading"><p class="eyebrow">01 / PROPERTY SITE PLAN</p><h2>Find your way <em>around the grounds.</em></h2></div>
-<div class="site-map-wrap"><svg class="site-map" viewBox="0 0 900 620" role="img" aria-labelledby="mapTitle mapDesc"><title id="mapTitle">Illustrative Bray Estate property map</title><desc id="mapDesc">Concept site plan with parking, event hall, garden lawn, five accommodations, main entrance, and service area.</desc>
-<rect x="10" y="10" width="880" height="600" rx="24" fill="#edf0df" stroke="#b9c4a6" stroke-width="2"/><path d="M40 490 C150 450 240 530 340 480 S540 470 650 520 S800 500 860 535" fill="none" stroke="#d1d9bf" stroke-width="34" stroke-linecap="round"/><path d="M40 490 C150 450 240 530 340 480 S540 470 650 520 S800 500 860 535" fill="none" stroke="#fffdf6" stroke-width="3" stroke-dasharray="10 10"/>
-<rect x="52" y="50" width="205" height="105" rx="12" fill="#d9d7cc" stroke="#9e9c91" stroke-width="2"/><text x="154" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#42483c">PARKING</text><g fill="#fffdf6" stroke="#a6a49a"><rect x="70" y="92" width="43" height="48" rx="3"/><rect x="121" y="92" width="43" height="48" rx="3"/><rect x="172" y="92" width="43" height="48" rx="3"/><rect x="223" y="92" width="20" height="48" rx="3"/></g>
-<rect x="324" y="50" width="260" height="150" rx="12" fill="#c7d4b6" stroke="#6f8663" stroke-width="2"/><text x="454" y="95" text-anchor="middle" font-size="19" font-weight="700" fill="#354a34">EVENT HALL</text><text x="454" y="120" text-anchor="middle" font-size="13" fill="#354a34">Indoor gatherings</text><path d="M420 150 h68 v28 h-68z" fill="#f7f4e9" stroke="#6f8663" stroke-width="2"/>
-<ellipse cx="706" cy="140" rx="115" ry="78" fill="#d8e1c9" stroke="#a5b794" stroke-width="2"/><text x="706" y="135" text-anchor="middle" font-size="17" font-weight="700" fill="#43563d">GARDEN LAWN</text><text x="706" y="158" text-anchor="middle" font-size="13" fill="#43563d">Outdoor events</text><g fill="#b2c69b"><circle cx="631" cy="100" r="12"/><circle cx="773" cy="92" r="16"/><circle cx="780" cy="184" r="13"/><circle cx="644" cy="185" r="14"/></g>
-<path d="M455 200 V260 H710 V220" stroke="#fffdf6" stroke-width="15" fill="none" stroke-linecap="round"/><path d="M455 200 V260 H710 V220" stroke="#c9c5b7" stroke-width="2" fill="none" stroke-dasharray="5 6"/>
-<g><rect x="55" y="235" width="130" height="88" rx="10" fill="#e7cda8" stroke="#b28b5e" stroke-width="2"/><text x="120" y="271" text-anchor="middle" font-size="16" font-weight="700" fill="#634d34">THE OAK</text><text x="120" y="293" text-anchor="middle" font-size="12" fill="#634d34">Stay 01</text>
-<rect x="205" y="235" width="130" height="88" rx="10" fill="#e7cda8" stroke="#b28b5e" stroke-width="2"/><text x="270" y="271" text-anchor="middle" font-size="16" font-weight="700" fill="#634d34">THE MEADOW</text><text x="270" y="293" text-anchor="middle" font-size="12" fill="#634d34">Stay 02</text>
-<rect x="355" y="330" width="130" height="88" rx="10" fill="#e7cda8" stroke="#b28b5e" stroke-width="2"/><text x="420" y="366" text-anchor="middle" font-size="16" font-weight="700" fill="#634d34">THE NEST</text><text x="420" y="388" text-anchor="middle" font-size="12" fill="#634d34">Stay 03</text>
-<rect x="505" y="330" width="130" height="88" rx="10" fill="#e7cda8" stroke="#b28b5e" stroke-width="2"/><text x="570" y="366" text-anchor="middle" font-size="16" font-weight="700" fill="#634d34">THE GARDEN</text><text x="570" y="388" text-anchor="middle" font-size="12" fill="#634d34">Stay 04</text>
-<rect x="655" y="330" width="130" height="88" rx="10" fill="#e7cda8" stroke="#b28b5e" stroke-width="2"/><text x="720" y="366" text-anchor="middle" font-size="16" font-weight="700" fill="#634d34">THE LOFT</text><text x="720" y="388" text-anchor="middle" font-size="12" fill="#634d34">Stay 05</text></g>
-<path d="M120 323 V440 H720 V418" fill="none" stroke="#fffdf6" stroke-width="10" stroke-linecap="round"/><path d="M120 323 V440 H720 V418" fill="none" stroke="#c9c5b7" stroke-width="2" stroke-dasharray="5 6"/>
-<rect x="55" y="535" width="210" height="48" rx="8" fill="#c8d6df" stroke="#839da9"/><text x="160" y="565" text-anchor="middle" font-size="15" font-weight="700" fill="#3f5c68">MAIN ENTRANCE</text><rect x="650" y="535" width="190" height="48" rx="8" fill="#ded9cb" stroke="#aaa28d"/><text x="745" y="565" text-anchor="middle" font-size="14" font-weight="700" fill="#5b574b">SERVICE / STORAGE</text><path d="M160 535 V510" stroke="#fffdf6" stroke-width="14" stroke-linecap="round"/><path d="M160 535 V510" stroke="#c9c5b7" stroke-width="2" stroke-dasharray="4 5"/><g transform="translate(832 38)"><path d="M0 25 L13 0 L26 25 Z" fill="#5d7453"/><text x="13" y="43" text-anchor="middle" font-size="12" font-weight="700" fill="#43563d">N</text></g></svg></div>
-<div class="legend"><span><i class="legend-dot event-dot"></i>Event space</span><span><i class="legend-dot stay-dot"></i>Accommodation</span><span><i class="legend-dot green-dot"></i>Garden / outdoor area</span><span><i class="legend-dot grey-dot"></i>Parking / service</span></div>
-<div class="map-section-heading real-map-heading"><p class="eyebrow">02 / REAL-WORLD LOCATION</p><h2>Find Bray Estate <em>in Texas.</em></h2><p class="muted">This map is a placeholder centered on Texas. Update the coordinates in <code>assets/main.js</code> after confirming the town or address.</p></div>
-<div id="locationMap" class="location-map" aria-label="Interactive map showing placeholder location in Texas"></div>
-<p class="map-caption">Interactive map powered by Leaflet and OpenStreetMap. Map tiles require an internet connection.</p>
-<div class="map-bottom"><div><h2>Need directions?</h2><p>Once you add the property's exact address, link visitors to turn-by-turn directions.</p></div><a class="button button-dark" href="contact.html">Contact us</a></div></section>
-</main>
-<footer class="footer">
-<a class="brand footer-brand" href="index.html"><span class="brand-mark">BE</span><span class="brand-name">BRAY ESTATE<small>TEXAS · EVENTS · STAYS</small></span></a>
-<p class="footer-quote">Gather well. Stay awhile.</p>
-<div class="footer-links"><a href="booking.html">Book your dates</a><a href="stay.html">The accommodations</a><a href="map.html">Grounds map</a><a href="contact.html">Contact</a></div>
-<small>© <span data-year></span> Bray Estate. Website starter — update property details before launch.</small>
-</footer>
-</body></html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Bray Estate &mdash; rustic elegance for Texas events and stays." name="description"/>
+  <title>
+   Explore the Grounds | Bray Estate
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+  <link href="assets/styles.css" rel="stylesheet"/>
+  <link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet"/>
+  <!-- Shared JavaScript: navigation, forms, and map behavior -->
+  <script defer="" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+  <script defer="" src="assets/main.js">
+  </script>
+ </head>
+ <body>
+  <!-- Shared site header and navigation -->
+  <header class="site-header">
+   <a class="brand" href="index.html">
+    <span class="brand-mark">
+     BE
+    </span>
+    <span class="brand-name">
+     BRAY ESTATE
+     <small>
+      TEXAS &middot; EVENTS &middot; STAYS
+     </small>
+    </span>
+   </a>
+   <button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
+    ☰
+   </button>
+   <nav class="nav">
+    <a class="" href="index.html">
+     Home
+    </a>
+    <a class="" href="events.html">
+     Events
+    </a>
+    <a class="" href="stay.html">
+     Stay With Us
+    </a>
+    <a class="" href="booking.html">
+     Book
+    </a>
+    <a class="active" href="map.html">
+     Explore the Grounds
+    </a>
+    <a class="" href="contact.html">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <main>
+   <section class="page-hero compact-hero">
+    <p class="eyebrow">
+     TAKE A LOOK AROUND
+    </p>
+    <h1>
+     Explore the
+     <em>
+      estate.
+     </em>
+    </h1>
+    <p>
+     View the concept property layout and the interactive map area for Bray Estate in Texas.
+    </p>
+   </section>
+   <section class="section-wrap">
+    <div class="map-disclaimer">
+     <strong>
+      Concept site plan:
+     </strong>
+     The property diagram below is illustrative, not a surveyed map. The interactive map is centered on Texas as a placeholder because a city or street address has not yet been provided. Replace both with accurate property details before guests rely on them.
+    </div>
+    <div class="map-section-heading">
+     <p class="eyebrow">
+      01 / PROPERTY SITE PLAN
+     </p>
+     <h2>
+      Find your way
+      <em>
+       around the grounds.
+      </em>
+     </h2>
+    </div>
+    <div class="site-map-wrap">
+     <svg aria-labelledby="mapTitle mapDesc" class="site-map" role="img" viewbox="0 0 900 620">
+      <title id="mapTitle">
+       Illustrative Bray Estate property map
+      </title>
+      <desc id="mapDesc">
+       Concept site plan with parking, event hall, garden lawn, five accommodations, main entrance, and service area.
+      </desc>
+      <rect fill="#edf0df" height="600" rx="24" stroke="#b9c4a6" stroke-width="2" width="880" x="10" y="10">
+      </rect>
+      <path d="M40 490 C150 450 240 530 340 480 S540 470 650 520 S800 500 860 535" fill="none" stroke="#d1d9bf" stroke-linecap="round" stroke-width="34">
+      </path>
+      <path d="M40 490 C150 450 240 530 340 480 S540 470 650 520 S800 500 860 535" fill="none" stroke="#fffdf6" stroke-dasharray="10 10" stroke-width="3">
+      </path>
+      <rect fill="#d9d7cc" height="105" rx="12" stroke="#9e9c91" stroke-width="2" width="205" x="52" y="50">
+      </rect>
+      <text fill="#42483c" font-size="15" font-weight="700" text-anchor="middle" x="154" y="80">
+       PARKING
+      </text>
+      <g fill="#fffdf6" stroke="#a6a49a">
+       <rect height="48" rx="3" width="43" x="70" y="92">
+       </rect>
+       <rect height="48" rx="3" width="43" x="121" y="92">
+       </rect>
+       <rect height="48" rx="3" width="43" x="172" y="92">
+       </rect>
+       <rect height="48" rx="3" width="20" x="223" y="92">
+       </rect>
+      </g>
+      <rect fill="#c7d4b6" height="150" rx="12" stroke="#6f8663" stroke-width="2" width="260" x="324" y="50">
+      </rect>
+      <text fill="#354a34" font-size="19" font-weight="700" text-anchor="middle" x="454" y="95">
+       EVENT HALL
+      </text>
+      <text fill="#354a34" font-size="13" text-anchor="middle" x="454" y="120">
+       Indoor gatherings
+      </text>
+      <path d="M420 150 h68 v28 h-68z" fill="#f7f4e9" stroke="#6f8663" stroke-width="2">
+      </path>
+      <ellipse cx="706" cy="140" fill="#d8e1c9" rx="115" ry="78" stroke="#a5b794" stroke-width="2">
+      </ellipse>
+      <text fill="#43563d" font-size="17" font-weight="700" text-anchor="middle" x="706" y="135">
+       GARDEN LAWN
+      </text>
+      <text fill="#43563d" font-size="13" text-anchor="middle" x="706" y="158">
+       Outdoor events
+      </text>
+      <g fill="#b2c69b">
+       <circle cx="631" cy="100" r="12">
+       </circle>
+       <circle cx="773" cy="92" r="16">
+       </circle>
+       <circle cx="780" cy="184" r="13">
+       </circle>
+       <circle cx="644" cy="185" r="14">
+       </circle>
+      </g>
+      <path d="M455 200 V260 H710 V220" fill="none" stroke="#fffdf6" stroke-linecap="round" stroke-width="15">
+      </path>
+      <path d="M455 200 V260 H710 V220" fill="none" stroke="#c9c5b7" stroke-dasharray="5 6" stroke-width="2">
+      </path>
+      <g>
+       <rect fill="#e7cda8" height="88" rx="10" stroke="#b28b5e" stroke-width="2" width="130" x="55" y="235">
+       </rect>
+       <text fill="#634d34" font-size="16" font-weight="700" text-anchor="middle" x="120" y="271">
+        THE OAK
+       </text>
+       <text fill="#634d34" font-size="12" text-anchor="middle" x="120" y="293">
+        Stay 01
+       </text>
+       <rect fill="#e7cda8" height="88" rx="10" stroke="#b28b5e" stroke-width="2" width="130" x="205" y="235">
+       </rect>
+       <text fill="#634d34" font-size="16" font-weight="700" text-anchor="middle" x="270" y="271">
+        THE MEADOW
+       </text>
+       <text fill="#634d34" font-size="12" text-anchor="middle" x="270" y="293">
+        Stay 02
+       </text>
+       <rect fill="#e7cda8" height="88" rx="10" stroke="#b28b5e" stroke-width="2" width="130" x="355" y="330">
+       </rect>
+       <text fill="#634d34" font-size="16" font-weight="700" text-anchor="middle" x="420" y="366">
+        THE NEST
+       </text>
+       <text fill="#634d34" font-size="12" text-anchor="middle" x="420" y="388">
+        Stay 03
+       </text>
+       <rect fill="#e7cda8" height="88" rx="10" stroke="#b28b5e" stroke-width="2" width="130" x="505" y="330">
+       </rect>
+       <text fill="#634d34" font-size="16" font-weight="700" text-anchor="middle" x="570" y="366">
+        THE GARDEN
+       </text>
+       <text fill="#634d34" font-size="12" text-anchor="middle" x="570" y="388">
+        Stay 04
+       </text>
+       <rect fill="#e7cda8" height="88" rx="10" stroke="#b28b5e" stroke-width="2" width="130" x="655" y="330">
+       </rect>
+       <text fill="#634d34" font-size="16" font-weight="700" text-anchor="middle" x="720" y="366">
+        THE LOFT
+       </text>
+       <text fill="#634d34" font-size="12" text-anchor="middle" x="720" y="388">
+        Stay 05
+       </text>
+      </g>
+      <path d="M120 323 V440 H720 V418" fill="none" stroke="#fffdf6" stroke-linecap="round" stroke-width="10">
+      </path>
+      <path d="M120 323 V440 H720 V418" fill="none" stroke="#c9c5b7" stroke-dasharray="5 6" stroke-width="2">
+      </path>
+      <rect fill="#c8d6df" height="48" rx="8" stroke="#839da9" width="210" x="55" y="535">
+      </rect>
+      <text fill="#3f5c68" font-size="15" font-weight="700" text-anchor="middle" x="160" y="565">
+       MAIN ENTRANCE
+      </text>
+      <rect fill="#ded9cb" height="48" rx="8" stroke="#aaa28d" width="190" x="650" y="535">
+      </rect>
+      <text fill="#5b574b" font-size="14" font-weight="700" text-anchor="middle" x="745" y="565">
+       SERVICE / STORAGE
+      </text>
+      <path d="M160 535 V510" stroke="#fffdf6" stroke-linecap="round" stroke-width="14">
+      </path>
+      <path d="M160 535 V510" stroke="#c9c5b7" stroke-dasharray="4 5" stroke-width="2">
+      </path>
+      <g transform="translate(832 38)">
+       <path d="M0 25 L13 0 L26 25 Z" fill="#5d7453">
+       </path>
+       <text fill="#43563d" font-size="12" font-weight="700" text-anchor="middle" x="13" y="43">
+        N
+       </text>
+      </g>
+     </svg>
+    </div>
+    <div class="legend">
+     <span>
+      <i class="legend-dot event-dot">
+      </i>
+      Event space
+     </span>
+     <span>
+      <i class="legend-dot stay-dot">
+      </i>
+      Accommodation
+     </span>
+     <span>
+      <i class="legend-dot green-dot">
+      </i>
+      Garden / outdoor area
+     </span>
+     <span>
+      <i class="legend-dot grey-dot">
+      </i>
+      Parking / service
+     </span>
+    </div>
+    <div class="map-section-heading real-map-heading">
+     <p class="eyebrow">
+      02 / REAL-WORLD LOCATION
+     </p>
+     <h2>
+      Find Bray Estate
+      <em>
+       in Texas.
+      </em>
+     </h2>
+     <p class="muted">
+      This map is a placeholder centered on Texas. Update the coordinates in
+      <code>
+       assets/main.js
+      </code>
+      after confirming the town or address.
+     </p>
+    </div>
+    <div aria-label="Interactive map showing placeholder location in Texas" class="location-map" id="locationMap">
+    </div>
+    <p class="map-caption">
+     Interactive map powered by Leaflet and OpenStreetMap. Map tiles require an internet connection.
+    </p>
+    <div class="map-bottom">
+     <div>
+      <h2>
+       Need directions?
+      </h2>
+      <p>
+       Once you add the property's exact address, link visitors to turn-by-turn directions.
+      </p>
+     </div>
+     <a class="button button-dark" href="contact.html">
+      Contact us
+     </a>
+    </div>
+   </section>
+  </main>
+  <!-- Shared footer and contact/navigation links -->
+  <footer class="footer">
+   <a class="brand footer-brand" href="index.html">
+    <span class="brand-mark">
+     BE
+    </span>
+    <span class="brand-name">
+     BRAY ESTATE
+     <small>
+      TEXAS &middot; EVENTS &middot; STAYS
+     </small>
+    </span>
+   </a>
+   <p class="footer-quote">
+    Gather well. Stay awhile.
+   </p>
+   <div class="footer-links">
+    <a href="booking.html">
+     Book your dates
+    </a>
+    <a href="stay.html">
+     The accommodations
+    </a>
+    <a href="map.html">
+     Grounds map
+    </a>
+    <a href="contact.html">
+     Contact
+    </a>
+   </div>
+   <small>
+    &copy;
+    <span data-year="">
+    </span>
+    Bray Estate. Website starter &mdash; update property details before launch.
+   </small>
+  </footer>
+ </body>
+</html>
+
